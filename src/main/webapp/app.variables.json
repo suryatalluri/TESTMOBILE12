@@ -455,7 +455,8 @@
 		"properties": [
 			"department",
 			"employeeByManagerid",
-			"employeesForManagerid"
+			"employeesForManagerid",
+			null
 		],
 		"relatedTables": [
 			{
@@ -475,6 +476,13 @@
 			{
 				"columnName": "employeeByManagerid",
 				"relationName": "employeesForManagerid",
+				"type": "Employee",
+				"package": "com.hrdb.Employee",
+				"watchOn": "HrdbEmployeeData"
+			},
+			{
+				"columnName": "employeeByManagerid",
+				"relationName": null,
 				"type": "Employee",
 				"package": "com.hrdb.Employee",
 				"watchOn": "HrdbEmployeeData"
